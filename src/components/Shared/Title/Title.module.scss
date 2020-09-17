@@ -1,0 +1,79 @@
+// @import "src/styles/colors";
+
+.root {
+	display: 'flex';
+}
+
+.toolbar {
+	padding-right: 24; // keep right padding when drawer closed
+}
+
+.toolbarIcon {
+	display: 'flex';
+	align-items: 'center';
+	justify-content: 'flex-end';
+	// padding: '0 8px';
+	// ...theme.mixins.toolbar,
+}
+
+// .appBar {
+	// zIndex: theme.zIndex.drawer + 1,
+	// transition: theme.transitions.create(['width', 'margin'], {
+		// easing: theme.transitions.easing.sharp,
+		// duration: theme.transitions.duration.leavingScreen,
+	// }),
+// }
+
+.appBarShift {
+	margin-left: drawerWidth;
+	width: `calc(100% - ${drawerWidth}px)`;
+}
+
+.menuButton {
+	margin-right: 36;
+}
+
+.menuButtonHidden {
+	display: 'none';
+}
+
+.title {
+	flex-grow: 1;
+}
+
+.drawerPaper {
+	position: 'relative';
+	whiteSpace: 'nowrap';
+	width: drawerWidth;
+	
+}
+
+
+.drawerPaperClose {
+	overflow-x: 'hidden';
+	width: theme.spacing(7);
+	
+}
+
+.appBarSpacer: theme.mixins.toolbar,
+content: {
+	flex-grow: 1;
+	height: '100vh';
+	overflow: 'auto';
+}
+
+.container {
+	padding-top: theme.spacing(4);
+	padding-bottom: theme.spacing(4);
+}
+
+.paper {
+	padding: theme.spacing(2),
+	display: 'flex',
+	overflow: 'auto',
+	flexDirection: 'column',
+}
+
+.fixedHeight {
+	height: 240;
+}
