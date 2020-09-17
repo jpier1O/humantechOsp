@@ -16,7 +16,7 @@ const ListItems = () => {
 
   return(
     <div>
-      <ListItem button>
+      <ListItem button onClick={() => history.push("/")}>
         <ListItemIcon>
           <DashboardIcon />
         </ListItemIcon>
@@ -28,7 +28,7 @@ const ListItems = () => {
         </ListItemIcon>
         <ListItemText primary="Peliculas" />
       </ListItem>
-      <ListItem button>
+      <ListItem button onClick={() => history.push("/turn")}>
         <ListItemIcon>
           <PeopleIcon />
         </ListItemIcon>

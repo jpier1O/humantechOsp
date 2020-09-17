@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './pages/Home/HomePage';
 import Movies from './pages/Movies/Movies';
 import Turn from './pages/Turn/Turn';
+import Drawer from './components/Shared/Drawer/Drawer';
 import './App.css';
 
 export const App = () => (
   <Router>
+    <Drawer />
     <Switch>
       <Route path="/" exact component={HomePage}/>
       <Route path="/movies" exact component={Movies}/>
