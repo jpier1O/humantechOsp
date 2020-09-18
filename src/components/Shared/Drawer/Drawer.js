@@ -9,11 +9,9 @@ import {
 	IconButton,
 	Divider,
 	Typography,
-	Badge,	
 } from "@material-ui/core";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 import MenuIcon from '@material-ui/icons/Menu'
 import ListItems from '../ListItems/ListItems';
 
@@ -127,10 +125,10 @@ const Drawer = () => {
 						<Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
 							Evaluacion Osp
 						</Typography>
-						<IconButton color="inherit">
-							<Badge badgeContent={4} color="secondary">
-								<NotificationsIcon />
-							</Badge>
+						<IconButton color="inherit">							
+							<Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+								Admin
+							</Typography>
 						</IconButton>
 					</Toolbar>
 				</AppBar>
